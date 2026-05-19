@@ -1,0 +1,43 @@
+*{
+    background-color: #F1E2D1;
+    font-family:"Google Sans", sans-serif; 
+    
+}
+
+input{
+    width: 300px;
+    padding: 12px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    font-size: 16px;
+    
+}
+
+#dynamic{
+    background-color: white;
+}
+
+#btn{
+    background-color: #DCCCAC;
+    color:white;
+    border-radius: 10px;
+    padding: 12px;
+}
+
+.edit-btn{
+    background-color: #79AE6F;
+    color:white;
+    border:none;
+    padding:10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.del-btn{
+    background-color: #CE2626;
+    color:white;
+    border:none;
+    padding: 10px;
+    border-radius: 5px;
+    
+}

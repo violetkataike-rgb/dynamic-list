@@ -1,3 +1,4 @@
+
 let input = document.getElementById("dynamic");
 let button = document.getElementById("btn");
 let list = document.getElementById("list");
@@ -29,7 +30,12 @@ button.addEventListener("click", function (e) {
 
     // add list item to big list
     span.textContent = input.value;
+
+    // save data
+    let myList = [];
+    localStorage.setItem ("list", JSON.stringify(myList));
     list.append(listItem);
+     
     input.value = "";
 
     // that DEL button
@@ -49,15 +55,9 @@ button.addEventListener("click", function (e) {
     });
   }
 
-  let userObj = {
-    listitem : listItem,
-    newbutton : button,
-    buttontwo : button
-  }
-
-  localStorage.setItem ("list", JSON.stringify(userObj));
-
-
+}
   
-  }
-});
+);
+
+let savedList = JSON.parse(localStorage.getItem("list"));
+console.log(savedList);
